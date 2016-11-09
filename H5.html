@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <title>一个测试网页</title>
+    <!--图文组件 页-组件 -->
+    <script src="js/H5.js"></script>
+    <script src="js/H5ComponentBase.js"></script>
+    <link rel="stylesheet" href="css/H5.css"/>
+    <!--基本资源库-->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery-ui.min.js"></script>
+    <script src="js/lib/jquery.fullPage.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!--用于验证添加组件-->
+<script type="text/javascript">
+    $(function(){
+        var h5 = new H5();
+        //链式调用的原理是每一个addPage都设置了返回H5对象
+        h5.addPage('face')
+            .addComponent('logo',{
+                text:'logo',
+                width:400,
+                height:100,
+                css:{backgroundColor:'red',top:200,opacity:0},
+                center:true,
+                animateIn:{
+                    opacity:1
+                },
+                animateOut:{
+                    opacity:0
+                }
+            })
+            .addComponent('slogan',{
+                text:'slogan',
+                width:400,
+                height:100,
+                css:{backgroundColor:'green',top:350},
+                center:true,
+                animateIn:{
+                    opacity:1
+                },
+                animateOut:{
+                    opacity:0
+                }
+            })
+        .addPage('desc')
+            .addComponent('caption',{
+                text:'核心理念',
+                width:400,
+                height:100,
+                css:{backgroundColor:'green',top:350},
+                center:true
+            })
+        .addPage('page-3')
+            .addComponent('caption',{text:'课程分布方向'})
+        .loader();
+        //用loader方法是为了避免资源的断层显示（在有很多资源需要加载的情况下）
+    })
+</script>
+</body>
+</html>
