@@ -38,45 +38,45 @@
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery-ui.min.js"></script>
     <script src="js/lib/jquery.fullPage.js"></script>
-<!--引入雷达图的资源-->
-    <script src="js/H5ComponentRadar.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/H5ComponentRadar.css"/>
+<!--引入饼图的资源-->
+    <script src="js/H5ComponentPie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5ComponentPie.css"/>
 
 
 </head>
 <body>
-<!--用于测试雷达图组件-->
+<!--用于测试饼图组件-->
     <div class="iphone">
 
     </div>
     <script type="text/javascript">
 
         var cfg = {
-            type:'radar',
+            type:'pie',
             width:400,
             height:400,
             data:[
-                ['JS',.8,'#ff7676'],
-                ['HTML5/CSS3',.6],
-                ['jQuery',.6],
-                ['Bootstrap',.4],
-                ['AngularJs',.4]
+                ['JS',.4,'#ff7676'],
+                ['HTML5/CSS3',.2],
+                ['jQuery',.2],
+                ['Bootstrap',.1],
+                ['AngularJs',.1]
             ],
             css:{
-                top:300,
-                opacity:0
+                top:200,
+               // opacity:0
             },
-            animateIn:{
+/*            animateIn:{
                 opacity:1,
                 top:200,
             },
             animateOut:{
                 opacity:0,
                 top:300,
-            },
+            },*/
             center:true
         };
-        var h5 = new H5ComponentRadar('myRadar',cfg);
+        var h5 = new H5ComponentPie('myPie',cfg);
         $('.iphone').append(h5);
         var load = true;
         $('body').click(function(){
