@@ -41,6 +41,9 @@
 <!--引入饼图的资源-->
     <script src="js/H5ComponentPie.js"></script>
     <link rel="stylesheet" type="text/css" href="css/H5ComponentPie.css"/>
+<!--引入环图的资源-->
+    <script src="js/H5ComponentRing.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5ComponentRing.css"/>
 
 
 </head>
@@ -52,15 +55,12 @@
     <script type="text/javascript">
 
         var cfg = {
-            type:'pie',
+            type:'ring',
             width:400,
             height:400,
             data:[
                 ['JS',.4,'#ff7676'],
-                ['HTML5/CSS3',.2],
-                ['jQuery',.2],
-                ['Bootstrap',.1],
-                ['AngularJs',.1]
+
             ],
             css:{
                 top:200,
@@ -76,7 +76,7 @@
             },*/
             center:true
         };
-        var h5 = new H5ComponentPie('myPie',cfg);
+        var h5 = new H5ComponentRing('myRing',cfg);
         $('.iphone').append(h5);
         var load = true;
         $('body').click(function(){

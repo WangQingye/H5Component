@@ -1,7 +1,7 @@
 /*散点图样式*/
 
 .h5_component_point{
-
+    color:#fff
 }
 .h5_component_point .point{
     display: block;

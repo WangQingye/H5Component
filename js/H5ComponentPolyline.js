@@ -123,7 +123,7 @@ H5ComponentPolyline = function (name, cfg) {
 
             ctx.fillStyle = item[2] ? item[2] : 'black';
 
-            ctx.font = '20px';
+            ctx.font = '12px';
 
             ctx.fillText((item[1] * 100) + '%', x - 8, y - 15);
         }

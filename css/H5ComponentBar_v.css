@@ -1,55 +1,66 @@
 /*柱状图样式*/
 
-.h5_component_bar{
-
-}
-.h5_component_bar .line{
-    height: 15px;
-    font-size: 12px;
-    line-height: 15px;
-    margin-bottom: 15px;
-}
-.h5_component_bar .name{
-
-    width: 60px;
-    float: left;
-    color:#000;
-    text-align: center;
-}
-
-.h5_component_bar .rate{
-    height: 15px;
-    margin-left: 5px;
-    margin-right: 3px;
-    float: left;
-    position: relative;
-}
-.h5_component_bar .rate .bg{
-    background-color: #99c9ff;
-    border-radius: 3px;
-    width: 0%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-}
-.h5_component_bar .per{
-    width: 20px;
-    color:#99c9ff ;
-    float: left;
+.h5_component_bar_v{
     opacity: 0;
 }
-.h5_component_bar_load .rate .bg{
-   transition:all 1s .5s;
+.h5_component_bar_v .line{
+    float:left;
+    height: 100%;
+    font-size: 12px;
+    position: relative;
+}
+.h5_component_bar_v .name{
+
     width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
 }
-.h5_component_bar_leave .rate .bg{
-    width: 0%;
+
+.h5_component_bar_v .rate{
+    width: 15px;
+    left: 50%;
+    margin-left: -8px;
+    bottom:0;
+    position: absolute;
 }
-.h5_component_bar_load .per{
+.h5_component_bar_v .rate .bg{
+    background-color: #99c9ff;
+    border-radius: 3px;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.h5_component_bar_v .per{
+    position: absolute;
+    left: 50%;
+    margin-left: -70%;
+    top:-20px;
+    height: 20px;
+    color:#99c9ff ;
+    opacity: 0;
+    text-align: center;
+    line-height: 20px;
+
+
+}
+.h5_component_bar_v_load .rate .bg{
+   transition:all 1s .5s;
+   height: 100%;
+}
+.h5_component_bar_v_leave .rate .bg{
+    height: 0%;
+}
+.h5_component_bar_v_load .per{
     transition:all 1s 1.1s;
     opacity: 1;
 }
-.h5_component_bar_leave .per{
+.h5_component_bar_v_leave .per{
     opacity: 0;
 }

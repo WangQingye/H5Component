@@ -63,6 +63,7 @@ var H5ComponentPie = function (name, cfg) {
         text.text(cfg.data[i][0]);
         var per = $('<div class="per"></div>');
         per.text(cfg.data[i][1]*100+'%');
+
         text.append(per);
 
         var x = r + Math.sin(.5*Math.PI-sAngel)*r;
@@ -78,9 +79,9 @@ var H5ComponentPie = function (name, cfg) {
         }
 
         if(y>h/2){
-            text.css('top',y/2);
+            text.css('top',y/2+5);
         }else {
-            text.css('bottom',(h-y)/2);
+            text.css('bottom',(h-y)/2+10);
         }
 
         if(cfg.data[i][2]){
@@ -109,6 +110,7 @@ var H5ComponentPie = function (name, cfg) {
   //  ctx.stroke();
 
     //蒙版生长动画
+
 function draw( per ) {
 
      ctx.clearRect(0,0,w,h);
@@ -135,7 +137,7 @@ function draw( per ) {
 
     //饼图生长动画
     component.on('onLoad',function(){
-        var s = 0;
+        var s = 1;//不知道为什么是1？是0的时候生长动画完成后蒙版又变成1
         for(i=0;i<100;i++){
             setTimeout(function(){
                 s+=.01;

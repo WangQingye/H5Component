@@ -1,35 +1,20 @@
-/*柱状图组件*/
-var H5ComponentBar=function( name , cfg ){
-    var component = new H5ComponentBase(name , cfg);
+// 柱图组件对象
+var H5ComponentBar_v=function(name,cfg) {
+    var component=new H5ComponentBar(name,cfg);
 
-    $.each(cfg.data,function(idx,item){
+    // 平均分配
+    var width=(100/cfg.data.length);
+    component.find('.line').width(width+'%');
 
-        console.log(item);
-
-        var line = $('<div class="line">');
-        var name = $('<div class="name">');
-        var rate = $('<div class="rate">');
-        var per = $('<div class="per">');
-
-        var width = item[1]*100+'%';
-
-        var bgStyle='';
-
-        if(item[2]){
-           bgStyle ='style="background-color:'+item[2]+'"';
-        }
-
-        rate.html('<div class="bg" '+bgStyle+'></div>')
-        rate.css('width',width);
-        name.text(item[0]);
-        per.text(width);
-
-        line.append(name).append(rate).append(per);
-
-        component.append(line);
-
+    $.each(component.find('.rate'),function () {
+        // 将水平的宽度设为垂直的高度
+        var w=$(this).css('width');
+        $(this).height(w).width('');
     });
 
-    return component
+    $.each(component.find('.per'),function () {
+        $(this).appendTo($(this).prev(''));
+    });
 
-}
+    return component;
+};
