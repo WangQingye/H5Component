@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99c3c84-577d-4340-8980-20cb7e239beb" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/face_logo.png" afterPath="$PROJECT_DIR$/imgs/face_logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/face_slogan.png" afterPath="$PROJECT_DIR$/imgs/face_slogan.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/footer.png" afterPath="$PROJECT_DIR$/imgs/footer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/tail_logo.png" afterPath="$PROJECT_DIR$/imgs/tail_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/tail_slogan.png" afterPath="$PROJECT_DIR$/imgs/tail_slogan.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5.html" afterPath="$PROJECT_DIR$/H5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentBar.html" afterPath="$PROJECT_DIR$/H5ComponentBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentBar_v.html" afterPath="$PROJECT_DIR$/H5ComponentBar_v.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentBase.html" afterPath="$PROJECT_DIR$/H5ComponentBase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentPie.html" afterPath="$PROJECT_DIR$/H5ComponentPie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentPolyline.html" afterPath="$PROJECT_DIR$/H5ComponentPolyline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5ComponentRadar.html" afterPath="$PROJECT_DIR$/H5ComponentRadar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5index.html" afterPath="$PROJECT_DIR$/H5index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/H5ComponentPolyline.css" afterPath="$PROJECT_DIR$/css/H5ComponentPolyline.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/H5ComponentPie.js" afterPath="$PROJECT_DIR$/js/H5ComponentPie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/H5ComponentPolyline.js" afterPath="$PROJECT_DIR$/js/H5ComponentPolyline.js" />
     </list>
     <ignored path="H5页面开发.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="444">
+              <caret line="139" column="40" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
               <folding>
                 <element signature="e#486#661#0" expanded="false" />
                 <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -401,12 +385,12 @@
       <workItem from="1478916972878" duration="9102000" />
       <workItem from="1478935777695" duration="7940000" />
       <workItem from="1479353990639" duration="249000" />
-      <workItem from="1481081529205" duration="7202000" />
+      <workItem from="1481081529205" duration="8302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35535000" />
+    <option name="totallyTimeSpent" value="36635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="219" width="1407" height="986" extended-state="1" />
@@ -851,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="444">
+          <caret line="139" column="40" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
           <folding>
             <element signature="e#486#661#0" expanded="false" />
             <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
