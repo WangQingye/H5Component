@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <title>正式开发</title>
+    <link rel="shortcut icon" href="imgs/W1.ico">
+    <title>暴走洛杉矶技术统计</title>
     <!--载入所有的组件资源-->
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery-ui.min.js"></script>
@@ -107,7 +108,7 @@
                     },
                     animateIn:{
                         opacity:1,
-                        bottom:'-1px'
+                        bottom:'1px'
                     },
                     animateOut:{
                         opacity:0,
@@ -123,8 +124,8 @@
                 .addPage('face')
                     .addComponent('logo',{
                         center:true,
-                        width:395,
-                        height:130,
+                        width:595,
+                        height:430,
                         bg:'imgs/face_logo.png',
                         css:{opacity:0},
                         animateIn:{top:100,opacity:1},
@@ -132,8 +133,8 @@
                     })
                     .addComponent('slogan',{
                         center:true,
-                        width:365,
-                        height:99,
+                        width:465,
+                        height:399,
                         bg:'imgs/face_slogan.png',
                         css:{left:'0',opacity:0,top:180},
                         animateIn:{left:'50%',opacity:1,top:'35%'},
@@ -161,7 +162,7 @@
                 .addPage() //2
                     .addComponent('caption',{text:'核心理念'})
                     .addComponent('text',{
-                        text:'英语学习=只学有用的',
+                        text:'什么是番茄英语?',
                         width:800,
                         height:30,
                         center:true,
@@ -191,8 +192,7 @@
                             textIndent:'30px',
                             top:340
                         },
-                        text:'1大神大神的阿萨德阿萨德阿萨德按时打算的哀伤' +
-                        '打算打算的阿萨德阿',
+                        text:'我们是一个英语学习组织，专治听不懂，说不出，憋出来也不地道的英语听说尴尬癌。我们找来了一群偏要靠才华吃饭的老外盆友，让大家开心一笑的同时，把有趣的外国文化，实用的生活词汇统统收入囊中。',
                         animateIn:{opacity:1,top:260},
                         animateOut:{opacity:0,top:340},
                         delay:800
@@ -217,10 +217,10 @@
                         width:630,
                         height:500,
                         data:[
-                            ['JS',.35,'#ff7676'],
-                            ['H5/CSS3',.5],
-                            ['jQuery',.2],
-                            ['node.js',.1]
+                            ['听力',.2,'#ff7676'],
+                            ['口语',.5],
+                            ['阅读',.2],
+                            ['语法',.1]
                         ],
                         css:{
                             top:100,
@@ -239,7 +239,7 @@
                         center:true
                     })
                     .addComponent('msg',{
-                        text:'前端开发课程占到40%',
+                        text:'口语练习课程占到50%',
                         css:{
                             opacity:0,
                             top:140,
@@ -258,17 +258,17 @@
 
                     })
                 .addPage() //4
-                    .addComponent('caption',{text:'移动开发课程资源'})//-Pie
+                    .addComponent('caption',{text:'参课人员分布'})//-Pie
                     .addComponent('pie',{
                         type:'pie',
                         width:400,
                         height:400,
                         data:[
-                            ['JS',.4,'#ff7676'],
-                            ['HTML5/CSS3',.2],
-                            ['jQuery',.2],
-                            ['Bootstrap',.1],
-                            ['AngularJs',.1]
+                            ['大学生',.4,'#ff7676'],
+                            ['海外工作',.2],
+                            ['白领',.2],
+                            ['中学生',.1],
+                            ['留学生',.1]
                         ],
                         css:{
                             top:200,
@@ -285,7 +285,7 @@
                         center:true
                     })
                     .addComponent('msg',{
-                        text:'移动课程JS占到40%',
+                        text:'在校大学生占到40%',
                         css:{
                             opacity:0,
                             bottom:120,
@@ -307,17 +307,17 @@
 
                     })
                 .addPage() //5
-                    .addComponent('caption',{text:'前端开发课程'})//-Bar
+                    .addComponent('caption',{text:'预期口语熟练度'})//-Bar
                     .addComponent('bar',{
                                 type:'bar',
                                 width:530,
                                 height:600,
                                 data:[
-                                    ['Javascript',.65,'#ff7676'],
-                                    ['HTML5/CSS3',.4],
-                                    ['jQuery',.1],
-                                    ['Bootstrap',.2],
-                                    ['AngularJs',.3]
+                                    ['日常生活',.65,'#ff7676'],
+                                    ['人际交往',.4],
+                                    ['专业术语',.1],
+                                    ['商务口语',.2],
+                                    ['工作场景',.3]
                                 ],
                                 css:{
                                     top:300,
@@ -334,7 +334,7 @@
                                 center:true
                     })
                     .addComponent('msg',{
-                        text:'移动课程JS占到40%',
+                        text:'日常生活口语能力预期65%',
                         css:{
                             opacity:0,
                             bottom:120,
@@ -356,17 +356,17 @@
 
                     })
                 .addPage() //6
-                    .addComponent('caption',{text:'报名人数过万'})//-Radar
+                    .addComponent('caption',{text:'参课人员地理分布'})//-Radar
                     .addComponent('radar',{
                         type:'radar',
                         width:400,
                         height:400,
                         data:[
-                            ['JS',.8,'#ff7676'],
-                            ['HTML5/CSS3',.6],
-                            ['jQuery',.6],
-                            ['Bootstrap',.4],
-                            ['AngularJs',.4]
+                            ['北上广大型城市',.8,'#ff7676'],
+                            ['各级省会城市',.6],
+                            ['中小型城市',.6],
+                            ['海外',.4],
+                            ['小型城市',.4]
                         ],
                         css:{
                             top:300,
@@ -384,7 +384,7 @@
                         center:true
                     })
                     .addComponent('msg',{
-                        text:'报名人数蜂拥而至',
+                        text:'大部分集中在中大型城市',
                         css:{
                             opacity:0,
                             bottom:120,
@@ -406,17 +406,17 @@
 
                     })
                 .addPage() //7
-                    .addComponent('caption',{text:'课程难度分布'})//-Ring
+                    .addComponent('caption',{text:'用户课程完成进度'})//-Ring
                     .addComponent('ring-all',{
                         type:'ring',center:true,
                         width:'400',height:400,
-                        data:[['互联网课程占比',.7,'#ff7676']],
+                        data:[['全部完成占比',.7,'#ff7676']],
                         css:{top:100,opacity:0,fontSize:'26px'},
                         animateIn:{opacity:1,top:150},
                         animateOut:{top:100,opacity:0}
                     })
                     .addComponent('msg',{
-                        text:'不同课程报名人数超过一万占比',
+                        text:'根据练习类型统计完成度',
                         css:{
                             opacity:0,
                             top:420,
@@ -440,7 +440,7 @@
                     .addComponent('ring-1',{
                         type:'ring',center:true,
                         width:200,height:200,
-                        data:[['后端开发',.3,'darkorange']],
+                        data:[['口语训练',.3,'darkorange']],
                         css:{left:30,bottom:60,opacity:0,fontSize:'18px'},
                         animateIn:{opacity:1,bottom:145},
                         animateOut:{bottom:60,opacity:0},
@@ -449,7 +449,7 @@
                     .addComponent('ring-2',{
                         type:'ring',
                         width:200,height:200,
-                        data:[['前端开发',.4,'darkorange']],
+                        data:[['生词训练',.4,'darkorange']],
                         css:{left:20,bottom:60,opacity:0,fontSize:'18px'},
                         animateIn:{opacity:1,bottom:145},
                         animateOut:{bottom:60,opacity:0},
@@ -458,7 +458,7 @@
                     .addComponent('ring-3',{
                         type:'ring',
                         width:200,height:200,
-                        data:[['移动开发',.7,'darkorange']],
+                        data:[['阅读训练',.7,'darkorange']],
                         css:{right:20,bottom:60,opacity:0,fontSize:'18px'},
                         animateIn:{opacity:1,bottom:145},
                         animateOut:{bottom:60,opacity:0},
@@ -467,7 +467,7 @@
                     .addComponent('ring-4',{
                         type:'ring',
                         width:200,height:200,
-                        data:[['数据处理',.2,'darkorange']],
+                        data:[['场景模拟',.2,'darkorange']],
                         css:{left:80,bottom:0,opacity:0,fontSize:'18px'},
                         animateIn:{opacity:1,bottom:30},
                         animateOut:{bottom:0,opacity:0},
@@ -476,7 +476,7 @@
                     .addComponent('ring-5',{
                         type:'ring',
                         width:200,height:200,
-                        data:[['图像处理',.35,'darkorange']],
+                        data:[['语法练习',.35,'darkorange']],
                         css:{right:80,bottom:0,opacity:0,fontSize:'18px'},
                         animateIn:{opacity:1,bottom:30},
                         animateOut:{bottom:0,opacity:0},
@@ -506,7 +506,7 @@
                 .addPage('tail') //9
                     .addComponent('logo',{
                         center:true,
-                        width:359,
+                        width:559,
                         height:129,
                         bg:'imgs/tail_logo.png',
                         css:{opacity:0,top:240},
@@ -515,8 +515,8 @@
                     })
                     .addComponent('slogan',{
                         center:true,
-                        width:314,
-                        height:446,
+                        width:414,
+                        height:546,
                         bg:'imgs/tail_slogan.png',
                         css:{opacity:0,top:300},
                         animateIn:{opacity:1,top:330},
@@ -543,7 +543,7 @@
                         }
 
                     })
-                    .loader();
+                    .loader(4);
             //用loader方法是为了避免资源的断层显示（在有很多资源需要加载的情况下）
 
         })

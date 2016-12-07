@@ -33,7 +33,7 @@ var H5ComponentPie = function (name, cfg) {
     $(cns).css('z-index',2);
     component.append(cns);
 
-    var colors=['red','green','blue','darkred','orange']; //备用颜色
+    var colors=['#81c2d6','#81c2d6','#8192d6','#D9B3E6','blue']; //备用颜色
     var sAngel  = 1.5 * Math.PI; //设置起始角度在12点钟方向
     var eAngel  = 0 ; //结束角度
     var aAngel  = Math.PI*2; //100%的圆结束角度
@@ -73,15 +73,15 @@ var H5ComponentPie = function (name, cfg) {
 
 
         if(x>w/2){
-            text.css('left',x/2);
+            text.css('left',x/2+15);
         }else {
-            text.css('right',(w-x)/2);
+            text.css('right',(w-x)/2+10);
         }
 
         if(y>h/2){
-            text.css('top',y/2+5);
+            text.css('top',y/2+10);
         }else {
-            text.css('bottom',(h-y)/2+10);
+            text.css('bottom',(h-y)/2+30);
         }
 
         if(cfg.data[i][2]){
